@@ -29,15 +29,15 @@ int main()
 	{
 		while(k!=0)
 		{
-		t=a[i];
-		a[i]=a[i+1];
-		a[i+1]=t;
-		i++;
-		if(i==n-1)
-		{
-			k++;
-			i=0;
-		}
+			t=a[i];
+			a[i]=a[i+1];
+			a[i+1]=t;
+			i++;
+			if(i==n-1)
+			{
+				k++;
+				i=0;
+			}
 		}
 	}
 	printf("New array is\n");
