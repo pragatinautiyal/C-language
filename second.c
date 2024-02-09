@@ -1,3 +1,4 @@
+//To input a 2-D array of dimension mXn and peform the operation: R2=2*R2-R1+5*R3
 #include<stdio.h>
 int main()
 {
