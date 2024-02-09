@@ -2,7 +2,7 @@
 #include<stdio.h>
 int main()
 {
-	int a[20][20],i,m,n,t,k,l;
+	int a[20][20],i,j,k,m,n,t;
 	printf("Input number of rows and columns in the matrix\n");
 	scanf("%d %d",&m,&n);
 	printf("Input elements of matrix\n");
@@ -15,15 +15,15 @@ int main()
 	}
 	for(i=0;i<m;i++)
 	{
-		for(k=0;k<m||k<n;k++)
+		for(j=0;j<m||j<n;j++)
 		{
-			for(l=0+k;l<n-1;l++)
+			for(k=0+j;k<n-1;k++)
 			{
-				if(a[i][k]>a[i][l+1])
+				if(a[i][j]>a[i][k+1])
 				{
-					t=a[i][k];
-					a[i][k]=a[i][l+1];
-					a[i][l+1]=t;
+					t=a[i][j];
+					a[i][j]=a[i][k+1];
+					a[i][k+1]=t;
 				}
 			}
 		}
@@ -39,5 +39,3 @@ int main()
 	}
 	return 0;
 }
-
-
