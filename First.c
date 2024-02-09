@@ -1,3 +1,4 @@
+//To input an array of length n and rotate the array by 'k' using a single loop
 #include<stdio.h>
 int main()
 {
